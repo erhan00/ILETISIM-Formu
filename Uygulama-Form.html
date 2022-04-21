@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet"  href="bootstrap.css">
+    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>bootstrap</title>
+</head>
+<body>
+
+  <!--sosyal medya lınkler -->
+<div id="SAYFABAŞI" class="container mt-2">
+ 
+  <div class="row">
+   <div class="col-sm-1">
+    <a href="https://api.whatsapp.com/send?phone=05303453169"><img src="RESİMLER/WhatsAp.png" class="mt-1 mx-4 sayfabaş"  style="width: 30px;height: 30px;"></a>
+   </div>
+   <div class="col-sm-2 mt-2 text-primary sayfabaş"><h6>0530 345 31 69</h6></div>
+   <div class="col-sm-6 text-primary mt-2">
+     <h6 class="mx-5"><span class="spinner-grow spinner-grow-sm"></span> KALKAN Bilgi Teknolojileri</h6></div> 
+   <div class="col-sm-3">
+    <a href="#"><img  src="RESİMLER/-linkedin.png" class="mt-1 mx-1 kucukresim"></a>
+    <a href="https://www.github.com/erhan00"><img  src="RESİMLER/gıthub.png" class="mt-1 mx-1 kucukresim"></a>
+    <a href="https://www.instagram.com/kalkantasyapi"><img  src="RESİMLER/insss.jpg" class="mt-1 mx-1 kucukresim"></a>
+    <a href="mailto:erhanslkms696@gmail.com"><img  src="RESİMLER/image.png" class="mt-1 mx-1 kucukresim"></a>
+    <a href="https://www.youtube.com"><img  src="RESİMLER/pytube.png" class="mt-1 mx-1 kucukresim"></a>
+  </div>
+
+  </div>
+</div>
+
+ <!--LOGO & Menulerr-->
+  <div class="container mt-2">
+    <div class="row">
+     <div class="col-md-4">
+         <img src="RESİMLER/İLETİ.jpeg"  style="width: 300px; height: 110px">
+     </div>
+     <div class="col-md-8 bg-primary">
+        <a href="#"><button type="button" style="text-decoration: none" class="mt-4 mx-3 btn btn-info text-dark"><h6>ANASAYFA</h6></button></a>
+        <a href="#"><button type="menu"  style="text-decoration: none" class="mt-4 mx-3 btn btn-info text-dark"><h6>KURUMSAL</h6></button></a>
+        <a href="#"><button type="button" style="text-decoration: none" class="mt-4 mx-3 btn btn-info text-dark"><h6>HİZMETLER</h6></button></a>
+        <a href="#"><button type="button" style="text-decoration: none" class="mt-4 mx-3 btn btn-info text-dark"><h6>REFERANSLAR</h6></button></a>
+        <a href="#"><button type="button" style="text-decoration: none" class="mt-4 mx-3 btn btn-info text-dark active"><h6>İLETİŞİM</h6></button></a>
+     </div>      
+    </div>
+  </div>
+
+  <!--COLLAPSE Üstte açılır MENU-->
+<nav class="container navbar mt-2 bg-dark">
+  <a class="navbar-brand"><img src="RESİMLER/İLETİ.jpeg" style="width: 100px; height: 30px;"></a>
+
+  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#acılır">
+    <span class="navbar-badge bg-danger text-white">* click *</span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="acılır">
+   <ul class="navbar-nav">
+     <li class="nav-item">
+       <a href="#" class="nav-link text-danger">Watsapp Canlı Destek</a>
+     </li>
+     <li class="nav-item">
+      <a href="#" class="nav-link text-danger">KALKAN Bilgi Tech</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-danger">Sivas Cummhuriyet Üniversitesi / TeknoKent</a>
+    </li>
+   </ul>
+  </div>
+
+</nav>
+
+<!--FORMM-->
+ <div class="mt-4 container">
+    
+<form action="#" class="was-validated">
+  <div class="row">
+
+   <div class="col-6">
+    <div class="mt-2">
+      <h5 class="text-success">İLETİŞİM FORMU</h5>
+     <label for="name" class="form-label text-success">
+       <h6>NAME</h6>
+     </label>
+     <input type="text" class="form-control FRMinnput" placeholder="* name" required>
+     <!--feedback : geribildirim
+     --valid : gecerli
+     --invalid : gecersiz -->
+     <div class="valid-feedback">Valid</div>
+     <div class="invalid-feedback">Lütfen bu alanı doldurun !</div>
+
+     <label for="surname" class="form-label text-success mt-3">
+       <h6>SURNAME</h6>
+     </label>
+     <input type="text" class="form-control FRMinnput" placeholder="* surname" required>
+      <div class="valid-feedback">Valid</div>
+      <div class="invalid-feedback">Lütfen bu alanı doldurun !</div>
+
+     <label for="mail" class="form-label text-success mt-3">
+      <h6>E-MAİL</h6>
+     </label>
+     <input type="email" class="form-control FRMinnput" placeholder="* e-mail" required>
+       <div class="valid-feedback">Valid</div>
+       <div class="invalid-feedback">Lütfen bu alanı doldurun !</div>
+     <label for="yorum" class="form-label text-success mt-3">
+       <h6>COMMENT</h6>
+     </label>
+     <textarea id="TXTRA" class="form-control" placeholder="* yorum"></textarea>
+
+     <div class="row">
+      <!--SECENEK listesi-->
+       <div class="col-6 bg-dark mx-2 mt-3">
+
+        <label for="bilgi" class="form-label text-danger mt-2">
+          <h6>BİLGİ AL :</h6>
+        </label>
+        <select id="xxOPTION" class="form-control mt-2 text-primary">
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>BOOTSTRAP</option>
+          <option>JAVASCRİPT</option>
+        </select>
+
+       </div>
+       <!--RADİO optıon-->
+       <div id="xxxOPTION" class="col-6 bg-dark mt-3 mx-2">
+
+        <div class="form-check mt-5">
+          <input type="radio" class="form-check-input"name="optıonn">
+          <label for="eğitim1" class="form-check-label">
+            <h6 class="text-primary">Lise</h6>
+          </label>
+          </div>
+          
+          <div class="form-check">
+          <input type="radio" class="form-check-input" name="optıonn">
+          <label for="eğitim2" class="form-check-label">
+            <h6 class="text-primary">Üniversite</h6>
+         </label>
+         </div>
+         
+        </div>
+
+       </div>
+       <button type="submit" class="btn btn-success mt-5">* * GÖNDER * *</button>
+       </div>
+      </div>
+    </form>
+
+ <!--İLETİŞİM BİLİGİLERİ-->
+  <div class="col-6">
+    <h5 class="text-success mt-2 mx-4">İLETİŞİM BİLGİLERİ</h5>
+    <h6 class="text-primary mt-4 mx-4"><img class="İLETİŞİM" src="RESİMLER/tel.jpg"><span class="mx-2">0530 345 31 69</span></h6>
+    <h6 class="text-primary mt-3 mx-4"><img class="İLETİŞİM" src="RESİMLER/collection.png"><span class="mx-2">ERHAN KALKAN</span></h6>
+    <h6 class="text-primary mt-3 mx-4"><img class="İLETİŞİM" src="RESİMLER/image.png"><a href="#" class="mx-2 Xiletişim">erhanslkms6969</a></h6>
+    <h6 class="text-primary mt-3 mx-4"><img class="İLETİŞİM" src="RESİMLER/map-symbol.png"><a class="mx-2 Xiletişim">Sivas Cumhuriyet Üniversitesi</a></h6>
+  
+    <img  id="FRONT" src="RESİMLER/indir.png" class="mt-5 mx-4">
+
+  </div>
+
+  
+ </div> 
+</div>
+<!--FOOTER-->
+<footer class="container mt-4">
+    <div class=" row">
+      <div class="col-sm-4 xxFOTER">
+
+        <div class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-info" href="#">
+            <h4> WEB TASARIM </h4>
+          </a>
+          <a class="list-group-item list-group-item-secondary" href="#">
+            <h6>Kurumsal Web Tasarım</h6>
+          </a>
+          <a class="list-group-item list-group-item-secondary" href="#">
+            <h6>Responsive Web Tasarım</h6>
+          </a>
+          <a class="list-group-item list-group-item-secondary" href="#">
+            <h6>Profesyonel Web Tasarım</h6>
+          </a>
+        </div>
+
+      </div>
+      <div class="col-sm-4 xxFOTER">
+
+        <div class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-info" href="#">
+            <h4> PROGRAMS </h4>
+          </a>
+          <a class="list-group-item list-group-item-secondary" href="#">
+            <h6>Backend</h6>
+          </a>
+          <a class="list-group-item list-group-item-secondary" href="#">
+            <h6>Frontend</h6>
+          </a>
+          <a class="list-group-item list-group-item-secondary" href="#">
+            <h6>Framewoks</h6>
+          </a>
+        </div>
+
+      </div>
+ 
+      <div class="col-sm-4">
+
+        <div class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-info" href="#">
+            <h4> İLETİŞİM </h4>
+          </a>
+          <a class="list-group-item list-group-item-secondary" href="#">
+            <h6>Watsapp</h6>
+          </a>
+          <a class="list-group-item list-group-item-secondary" href="#">
+            <h6>Linkedin</h6>
+          </a>
+          <a class="list-group-item list-group-item-secondary" href="#">
+            <h6>İnstagram</h6>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row mt-3 mb-3 bg-secondary">
+      <div class="col-sm-5"></div>
+      <div class="col-sm-4">
+        <a id="PAGEx" href="#SAYFABAŞI"><button type="button" class="btn btn-primary text-white">
+            <h5>Page Start</h5>
+          </button>
+        </a>
+
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+    
+  </div>
+</footer>
+</body>
+</html>
